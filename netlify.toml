@@ -2,3 +2,7 @@
   from = "/*"
   to = "/"
   status = 200
+
+[build]
+  command = "npm install --legacy-peer-deps && npm run build"
+  publish = "build"  # Adjust this if your build directory is different
